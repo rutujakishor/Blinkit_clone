@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Blinkit-Webpage</title>
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="bg-light border-bottom px-4 py-2 d-flex justify-content-between align-items-center">
+        <a class="BlinkitLogo__LogoContainer-sc-xocpjl-0 jzxMvs" href="/"><svg width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z" fill="#F8CB46"></path><path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path><path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path><path d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z" fill="#F8CB46"></path><path d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z" fill="#F8CB46"></path><path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path><path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path><path d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z" fill="#54B226"></path><path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path></svg></a>
+        <div class="vertical-line"></div>
+        <div class="location">
+            <h5>Delivery in 8 minutes</h5>
+            <p>Bengaluru, India <i class="fa-solid fa-caret-down"></i></p>
+        </div>
+        <div class="search-div">
+            
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="search-input" placeholder="Search 'bread'" />
+        </div>
+        <button class="nav-btns btn btn-lg">Login</button>
+        <button class="nav-btns btn btn-lg btn-success rounded-4 px-3 py-2 my-cart"><i class="fa-solid fa-cart-shopping"></i>My Cart</button>
+    </nav>
+    <!-- paan corner -->
+    <section class="hero-section d-flex justify-content-center vw-100">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=1440/layout-engine/2022-05/Group-33704.jpg" alt="paan corner banner" width="1280" height="234.8623853211009" loading="eager" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+    </section>
+
+    <!-- scroll img --> 
+    <div class="my-container">
+        <div class="my-list">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=360/layout-engine/2023-08/Web-Raksha-Bandhan.jpg" alt="masthead_web_f23_rakhi" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=360/layout-engine/2023-03/beauty-WEB.jpg" alt="masthead_web_beauty_store" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=360/layout-engine/2023-07/electronics-WEB.jpg" alt="masthead_web_electronic_store" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=360/layout-engine/2023-08/Web-Raksha-Bandhan.jpg" alt="masthead_web_f23_rakhi" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=360/layout-engine/2023-03/beauty-WEB.jpg" alt="masthead_web_beauty_store" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=360/layout-engine/2023-07/electronics-WEB.jpg" alt="masthead_web_electronic_store" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+
+        </div> 
+    </div>
+    <!-- categories -->
+    <section class="d-flex justify-content-center vw-100">
+        <div class="my-categories d-flex justify-content-between flex-wrap">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-5_4.png" alt="5 - Snacks &amp; Munchies " width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-3_9.png" alt="3 - Fruits &amp; Vegetables" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-7_3.png" alt="7 - Sweet Tooth" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-10.png" alt="10 - Atta, Rice &amp; Dal" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-18.png" alt="18 - Home &amp; Office " width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-12.png" alt="12 - Sauces &amp; Spreads" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-16.png" alt="16 - Pharma &amp; Wellness" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-11.png" alt="11 - Masala, Oil &amp; More " width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-19.png" alt="19 - Personal Care" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-14.png" alt="14 - Organic &amp; Healthy Living" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-17.png" alt="17 - Clening Essentials" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-9_3.png" alt="9 - Tea, Coffee &amp; Health Drink " width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-8_4.png" alt="8 - Bakery &amp; Biscuits" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-6_5.png" alt="6 - Breakfast &amp; Instant Food" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-15.png" alt="15 - Baby Care" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-4_9.png" alt="4 - Cold Drinks &amp; Juices " width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/layout-engine/2022-11/Slice-20.png" alt="20 - Pet Care" width="106.7" height="156.91176470588235" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/layout-engine/2022-11/Slice-13.png" alt="13 - Chicken, Meat &amp; Fish " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        </div>
+    </section>
+
+    <div class="category-section">
+        <h2>Dairy, Bread & Eggs</h2>
+        <div class="category-section-row">
+            <div class="my-list p-3">
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/168a.jpg?ts=1689327537" alt="Amul Pure Milk Cheese Slices" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">Amul Milk Cheese Slices</div>
+                    <div class="my-card-weight pt-3">200g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price"><s>₹140</s><br>₹134</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/28169a.jpg?ts=1678192659" alt="Milky Mist Paneer" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Milky Mist Paneer</div>
+                    <div class="my-card-weight pt-3">200g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹125</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/259923a.jpg?ts=1690813648" alt="Nandini Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Nandini Curd</div>
+
+                    <div class="my-card-weight pt-3">500g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹26</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/37083a.jpg?ts=1690814439" alt="Nandini Toned Fresh Milk" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Nandini Toned Fresh Milk</div>
+                    <div class="my-card-weight pt-3">500g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹22</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/15364a.jpg?ts=1687525088" alt="Britannia Brown Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Britannia Brown Bread</div>
+                    <div class="my-card-weight pt-3">400g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹55</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/170a.jpg?ts=1689327537" alt="Amul Cheese Cubes" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Amul Cheese Cubes</div>
+                    <div class="my-card-weight pt-3">200g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹131</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/480950a.jpg?ts=1687523763" alt="Jaya White Eggs" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Jaya White Eggs</div>
+                    <div class="my-card-weight pt-3">6 pieces</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹55</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/160a.jpg?ts=1689327537" alt="Amul Salted Butter" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+                
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Amul Salted Butter</div>
+                    <div class="my-card-weight pt-3">500g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹275</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category-section">
+        <h2>Snacks & Munchies</h2>
+        <div class="category-section-row">
+            <div class="my-list p-3">
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/481020a.jpg?ts=1688628165" alt="DNV Appalam Papad" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">DNV Appalam Papad</div>
+                    <div class="my-card-weight pt-3">60g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹30</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/432818a.jpg?ts=1688444559" alt="Doritos Cheese Nachos" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Doritos Cheese Nachos</div>
+                    <div class="my-card-weight pt-3">200g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹125</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/19250a.jpg?ts=1690817486" alt="Haldiram's Nagpur Aloo Bhujia" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Haldiram's Aloo Bhujia</div>
+                    <div class="my-card-weight pt-3">1kg</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹225</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/481020a.jpg?ts=1688628165" alt="DNV Appalam Papad" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">DNV Appalam Papad</div>
+                    <div class="my-card-weight pt-3">60g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹30</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/432818a.jpg?ts=1688444559" alt="Doritos Cheese Nachos" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Doritos Cheese Nachos</div>
+                    <div class="my-card-weight pt-3">200g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹125</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/19250a.jpg?ts=1690817486" alt="Haldiram's Nagpur Aloo Bhujia" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Haldiram's Aloo Bhujia</div>
+                    <div class="my-card-weight pt-3">1kg</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹225</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/481020a.jpg?ts=1688628165" alt="DNV Appalam Papad" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">DNV Appalam Papad</div>
+                    <div class="my-card-weight pt-3">60g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹30</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-section">
+        <h2>Mouth fresheners</h2>
+        <div class="category-section-row">
+            <div class="my-list p-3">
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/110259a.jpg?ts=1688469108" alt="Pass Pass Minty Mix Mouth Freshener" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">Pass Pass Minty Mix</div>
+                    <div class="my-card-weight pt-3">100g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹90</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/102587a.jpg?ts=1690815086" alt="Chandan Special Masala Mouth Freshener" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Chandan Freshener</div>
+                    <div class="my-card-weight pt-3">100g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹60</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/498984a.jpg?ts=1686566080" alt="Spraymintt Icymint Mouth Freshener" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Spraymintt Freshener</div>
+
+                    <div class="my-card-weight pt-3">15g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹99</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/110259a.jpg?ts=1688469108" alt="Pass Pass Minty Mix Mouth Freshener" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">Pass Pass Minty Mix</div>
+                    <div class="my-card-weight pt-3">100g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹90</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/102587a.jpg?ts=1690815086" alt="Chandan Special Masala Mouth Freshener" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Chandan Freshener</div>
+                    <div class="my-card-weight pt-3">100g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹60</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/498984a.jpg?ts=1686566080" alt="Spraymintt Icymint Mouth Freshener" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Spraymintt Freshener</div>
+
+                    <div class="my-card-weight pt-3">15g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹99</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/110259a.jpg?ts=1688469108" alt="Pass Pass Minty Mix Mouth Freshener" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">Pass Pass Minty Mix</div>
+                    <div class="my-card-weight pt-3">100g</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹90</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="category-section">
+        <h2>Cold Drinks & Juices</h2>
+        <div class="category-section-row">
+            <div class="my-list p-3">
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/298a.jpg?ts=1689327541" alt="Maaza Mango Drink 600 ml" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">Maaza Mango Drink</div>
+                    <div class="my-card-weight pt-3">600ml</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹42</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/358a.jpg?ts=1679035808" alt="Real Activ 100% Apple Juice" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Real Active Apple Juice</div>
+                    <div class="my-card-weight pt-3">1l</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹155</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/314a.jpg?ts=1690814449" alt="Thums Up Soft Drink (750 ml)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+                    
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">ThumsUp Soft Drink</div>
+
+                    <div class="my-card-weight pt-3">750ml</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹40</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/298a.jpg?ts=1689327541" alt="Maaza Mango Drink 600 ml" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">Maaza Mango Drink</div>
+                    <div class="my-card-weight pt-3">600ml</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹42</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/358a.jpg?ts=1679035808" alt="Real Activ 100% Apple Juice" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">Real Active Apple Juice</div>
+                    <div class="my-card-weight pt-3">1l</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹155</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/314a.jpg?ts=1690814449" alt="Thums Up Soft Drink (750 ml)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+                    
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 8 MINS</div>
+                    <div class="my-card-title">ThumsUp Soft Drink</div>
+
+                    <div class="my-card-weight pt-3">750ml</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹40</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+                <div class="card p-3 shadow my-card d-inline-block flex-column">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/sliding_image/298a.jpg?ts=1689327541" alt="Maaza Mango Drink 600 ml" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        
+                    <div class="my-card-time"><i class="fa-solid fa-stopwatch"></i> 9 MINS</div>
+                    <div class="my-card-title">Maaza Mango Drink</div>
+                    <div class="my-card-weight pt-3">600ml</div>
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <div class="card-price">₹42</div>
+                        <button class="btn btn-outline-success px-4">ADD</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <!-- last section -->
+    <div class="my-footer">
+<!-- contains 3 parts -->
+        <div class="row-1">
+            <div class="useful-links">
+                <h2>Useful Links</h2>
+                <table>
+                    <tr>
+                        <td>About</td>
+                        <td>Privacy</td>
+                        <td>Partner</td>   
+                    </tr>
+                    <tr>
+                        <td>Career</td>
+                        <td>Terms</td>
+                        <td>Express</td>   
+                    </tr>
+                    <tr>
+                        <td>Blog</td>
+                        <td>FAQs</td>
+                        <td>Seller</td>   
+                    </tr>
+                    <tr>
+                        <td>Press</td>
+                        <td>Security</td>
+                        <td>Spotlight</td>   
+                    </tr>
+                    <tr>
+                        <td>Lead</td>
+                        <td>Mobile</td>
+                        <td>Warehouse</td>   
+                    </tr>
+                    <tr>
+                        <td>Value</td>
+                        <td>Contact</td>
+                        <td>Deliver</td>   
+                    </tr>
+                </table>
+            </div>
+            <div class="categories-links">
+                <h4>Categories <a href="#" class="text-decoration-none text-success fs-6 fw-bold">see all</a></h4>
+                <table>
+                    <tr>
+                        <td>Vegetables & Fruits</td>
+                        <td>Dairy & Breakfast</td>
+                        <td>Munchies</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Drinks & Juices</td>
+                        <td>Instant & Frozen Food</td>
+                        <td>Tea, Coffee & Health Drinks</td>
+                    </tr>
+                    <tr>
+                        <td>Bakery & Biscuits</td>
+                        <td>Sweet Tooth</td>
+                        <td>Atta, Rice & Dal</td>
+                    </tr>
+                    <tr>
+                        <td>Dry Fruits, Masala & Oil</td>
+                        <td>Sauces & Spreads</td>
+                        <td>Chicken, Meat & Fish</td>
+                    </tr>
+                    <tr>
+                        <td>Paan Corner</td>
+                        <td>Organic & Premium</td>
+                        <td>Baby Care</td>
+                    </tr>
+                    <tr>
+                        <td>Pharma & Wellness</td>
+                        <td>Cleaning Essentials</td>
+                        <td>Home & Office</td>
+                    </tr>
+                    <tr>
+                        <td>Personal Care</td>
+                        <td>Ice Creams & Frozen Deserts</td>
+                        <td>Pet Care</td>
+                    </tr>
+                    <tr>
+                        <td>Beauty & Cosmetics</td>
+                        <td>Toys & Games</td>
+                        <td>Magazines</td>
+                    </tr>
+                    <tr>
+                        <td>Print Store</td>  
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row-2">
+            <p style="font-size: 14px;">© Blink Commerce Private Limited (formerly known as Grofers India Private Limited),2016-2023</p>
+            <div class="download-section d-flex justify-content-between align-items-center">
+                <p class="m-0">Download App</p>
+                <img src="https://th.bing.com/th?id=OIP.fn_qr7uzdYZfa8zVcFbNYgHaCj&w=350&h=120&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" width="100" height="35" alt="app store">
+                <img src="data:image/jpeg;base64,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" width="100" height="40" alt="Google play">
+
+            </div>
+           <div class="social">     
+                <div class="social-btn"><i class="fa-brands fa-square-instagram"></i></div>
+                <div class="social-btn"><i class="fa-brands fa-square-twitter"></i></div>
+                <div class="social-btn"><i class="fa-brands fa-square-facebook"></i></div>
+                <div class="social-btn"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="social-btn"><i class="fa-brands fa-square-threads"></i></div>  
+            </div>
+        </div>
+        <div class="row-3" style="font-size: 15px;">“Blinkit” is owned & managed by "Blink Commerce Private Limited" 
+            (formerly known as Grofers India Private Limited) and is not related, linked or interconnected in whatsoever manner 
+            or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone Consultancy Services 
+            Private Limited”.</div>
+        <div class="text">Coded by Subhan Kausar</div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+</html>
